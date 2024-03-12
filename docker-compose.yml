@@ -1,0 +1,11 @@
+version: '3.6'
+services:
+        ui:
+                image: nginx:latest
+                ports:
+                        - '80:80'
+        backend:
+                image: node:21-slim
+                ports:
+                        - '8000:8000'
+
